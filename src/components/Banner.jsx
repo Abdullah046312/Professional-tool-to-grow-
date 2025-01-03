@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from './Container';
 import bannerimg from "../assets/bannerimg.png";
+import { FaEnvelope } from 'react-icons/fa';
 
 const Banner = () => {
   return (
@@ -13,8 +14,8 @@ const Banner = () => {
       <Container>
         <div className="flex flex-col lg:flex-row justify-between items-center">
           {/* Left Section */}
-          <div className="w-full lg:w-1/2 px-5 lg:px-0 text-center lg:text-left">
-            <h2 className="text-[32px] lg:text-[64px] text-[#29313D] font-openSans font-bold mt-5 lg:mt-10">
+          <div className="w-full lg:w-1/2 lg:px-0 text-center lg:text-left">
+            <h2 className="text-[26px] lg:text-[64px] text-[#29313D] font-openSans font-bold ">
               Professional Task Manager Tool To Grow
             </h2>
             <p className="text-[16px] lg:text-[18px] text-[#29313D] w-full lg:w-[580px] font-Paprika font-normal mt-3 pr-5 border-l-4 border-[#FFC556] pl-5 mx-auto lg:mx-0">
@@ -22,10 +23,11 @@ const Banner = () => {
             </p>
             <div className="relative mt-8">
               <input
-                className="text-[14px] lg:text-[16px] font-Inter h-[50px] w-full lg:w-[420px] outline-none rounded-lg pl-5"
+                className="text-[14px] lg:text-[16px] font-Inter h-[50px] w-full lg:w-[420px] outline-none rounded-lg pl-10"
                 type="text"
                 placeholder="Join with us using your gmail address"
               />
+               <FaEnvelope className="absolute left-3 top-1/2 transform -translate-y-1/2 text-[#4B70F5]" />
               <button
                 className="absolute top-[-32px] right-0 lg:left-[330px] h-[50px] w-[100px] text-[#FFFF] font-Inter font-bold mt-8 outline-none rounded-lg bg-[#8454F5] hover:bg-[#7037b0] transition-all duration-300 ease-in-out"
               >
